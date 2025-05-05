@@ -1,4 +1,4 @@
-/* General reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #181818; /* Dark background */
-  color: #e0e0e0; /* Light text color */
+  background-color: #181818;
+  color: #e0e0e0;
   line-height: 1.6;
 }
 
@@ -19,12 +19,11 @@ a {
 
 h1, h2, h3 {
   font-weight: 700;
-  color: #fff; /* White text for headings */
+  color: #fff;
 }
 
-/* Header */
 header {
-  background: linear-gradient(135deg, #2c3e50, #34495e); /* Dark gradient */
+  background: linear-gradient(135deg, #2c3e50, #34495e);
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -51,7 +50,7 @@ header p {
 
 nav {
   margin-top: 15px;
-  background-color: #333; /* Dark grey background for navbar */
+  background-color: #333;
   padding: 15px 0;
   text-align: center;
   border-radius: 10px;
@@ -60,16 +59,16 @@ nav {
 nav a {
   margin: 0 15px;
   font-size: 1.1rem;
-  color: #fff; /* White text color for the links */
+  color: #fff;
   padding: 10px 20px;
-  background-color: #555; /* Medium grey background for the links */
+  background-color: #555;
   border-radius: 30px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #777; /* Light grey on hover */
-  transform: translateY(-5px); /* Lift effect */
+  background-color: #777;
+  transform: translateY(-5px);
 }
 
 section {
@@ -77,6 +76,7 @@ section {
   text-align: center;
   margin: 20px 0;
   transition: transform 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
 }
 
 section:hover {
@@ -84,15 +84,15 @@ section:hover {
 }
 
 /* About Section */
-section#about h1 {
-  color: #808080; /* Grey accent */
+#about h1 {
+  color: #808080;
   margin-top: 20px;
 }
 
-section#about p {
+#about p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #ccc; /* Lighter text for readability */
+  color: #ccc;
 }
 
 /* Skills */
@@ -106,7 +106,7 @@ section#about p {
 
 .skills-list li {
   font-size: 1.2rem;
-  background-color: #333; /* Darker background for skills */
+  background-color: #333;
   padding: 8px 15px;
   border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -114,18 +114,18 @@ section#about p {
 }
 
 .skills-list li:hover {
-  transform: scale(1.1); /* Slightly enlarges on hover */
-  background-color: #808080; /* Grey color on hover */
+  transform: scale(1.1);
+  background-color: #808080;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
 
 .skills-list li:nth-child(even) {
-  background-color: #444; /* Slightly lighter for alternate items */
+  background-color: #444;
 }
 
 /* Projects */
 .project {
-  background-color: #333; /* Dark background for project cards */
+  background-color: #333;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
@@ -135,12 +135,12 @@ section#about p {
 
 .project h3 {
   font-size: 1.6rem;
-  color: #808080; /* Grey accent */
+  color: #808080;
   transition: color 0.3s ease;
 }
 
 .project h3:hover {
-  color: #666666; /* Darker grey on hover */
+  color: #666666;
 }
 
 .project:hover {
@@ -152,12 +152,12 @@ section#about p {
   font-size: 1.1rem;
   margin-top: 10px;
   line-height: 1.7;
-  color: #bbb; /* Lighter text for project descriptions */
+  color: #bbb;
 }
 
 /* Certifications */
 .cert {
-  background-color: #333; /* Dark background for certs */
+  background-color: #333;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
@@ -166,7 +166,7 @@ section#about p {
 }
 
 .cert:hover {
-  transform: translateY(-5px); /* Slight lift effect on hover */
+  transform: translateY(-5px);
 }
 
 .cert p {
@@ -177,7 +177,7 @@ section#about p {
 
 /* Resume Section */
 #resume a {
-  background-color: #808080; /* Grey color */
+  background-color: #808080;
   color: #fff;
   padding: 10px 20px;
   border-radius: 30px;
@@ -186,35 +186,35 @@ section#about p {
 }
 
 #resume a:hover {
-  background-color: #666666; /* Darker grey on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #666666;
+  transform: scale(1.05);
 }
 
-/* Contact Section */
+/* Contact */
 #contact a {
-  color: #808080; /* Grey accent */
+  color: #808080;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 #contact a:hover {
-  color: #666666; /* Darker grey on hover */
-  text-decoration: underline; /* Underline effect */
+  color: #666666;
+  text-decoration: underline;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  background: linear-gradient(135deg, #2c3e50, #34495e); /* Same gradient as header */
-  color: #fff; /* White text for contrast */
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #fff;
   padding: 20px;
   margin-top: 40px;
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
 footer:hover {
-  background: linear-gradient(135deg, #34495e, #2c3e50); /* Invert gradient on hover */
-  transform: translateY(-5px); /* Lift effect on hover */
+  background: linear-gradient(135deg, #34495e, #2c3e50);
+  transform: translateY(-5px);
 }
 
 footer p {
@@ -223,19 +223,23 @@ footer p {
 }
 
 footer p:hover {
-  color: #808080; /* Grey color on hover for text */
+  color: #808080;
 }
 
-/* Animations */
+/* Headings Hover Effect */
+h1:hover, h2:hover, h3:hover {
+  color: #808080;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Fade In Animation */
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
-section {
-  animation: fadeIn 1s ease-in-out;
-}
-
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   nav {
     display: flex;
@@ -257,50 +261,54 @@ section {
     padding: 30px 10px;
   }
 }
-/* Hover effect for headings (h1, h2, h3) */
-h1:hover, h2:hover, h3:hover {
-  color: #808080; /* Grey color on hover */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Subtle shadow for emphasis */
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 80%; /* Adjust width to make the container smaller */
+  margin: 0 auto; /* Centers the container horizontally */
 }
 
-/* Hover effect for paragraphs */
-p:hover {
-  color: #ccc; /* Light grey text color on hover */
-  text-decoration: underline; /* Underline text on hover */
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+
+.project {
+  flex: 1 1 45%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #333;
 }
 
-/* Hover effect for links in the contact section */
-#contact a:hover {
-  color: #666666; /* Darker grey on hover */
-  text-decoration: underline; /* Underline effect */
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+#projects h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* Add this to your existing styles.css */
+
+.cert a {
+  color: #000000; /* Default link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
-/* Hover effect for project titles */
-.project h3:hover {
-  color: #808080; /* Grey color on hover */
-  text-decoration: underline; /* Underline effect for titles */
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+.cert a:hover {
+  color: #666666; /* Color when hovered */
+  text-decoration: underline; /* Underline on hover */
 }
-
-/* Hover effect for certification text */
-.cert p:hover {
-  color: #808080; /* Grey color on hover */
-  text-decoration: underline;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-/* Hover effect for resume link */
-#resume a:hover {
-  color: #666666; /* Darker grey color on hover */
-  text-decoration: underline;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-/* Hover effect for general text (paragraphs, headings, etc.) */
-section p:hover, section h1:hover, section h2:hover, section h3:hover {
-  color: #808080; /* Grey color on hover */
-  transition: color 0.3s ease;
+.project img {
+  width: 350px; /* Increased width */
+  height: 250px; /* Increased height */
+  object-fit: cover; /* Ensures the image fits the container without distortion */
+  border-radius: 8px; /* Optional: Adds rounded corners to the image */
+  margin-top: 20px; /* Adds space between text and image */
+  display: block; /* Ensures the image is a block element */
+  margin-left: auto;
+  margin-right: auto; /* Centers the image */
 }
