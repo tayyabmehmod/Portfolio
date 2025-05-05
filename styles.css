@@ -312,3 +312,36 @@ h1:hover, h2:hover, h3:hover {
   margin-left: auto;
   margin-right: auto; /* Centers the image */
 }
+/* For images inside .project */
+.project img {
+  max-width: 100%; /* Ensures the image doesn't overflow its container */
+  height: auto;    /* Maintains the aspect ratio */
+}
+
+/* Adjust the container for smaller screens */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-container {
+    width: 95%; /* Increase width on smaller screens */
+    padding: 10px; /* Add some padding */
+  }
+
+  .project {
+    width: 100%; /* Make project items take up the full width */
+    margin-bottom: 20px; /* Space between project items */
+  }
+
+  .project img {
+    width: 100%; /* Make the image width 100% for mobile */
+    height: auto; /* Maintain the aspect ratio */
+  }
+}
