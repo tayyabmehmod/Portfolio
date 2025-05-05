@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Tayyab Mehmood. Developer, Content Creator, and Digital Marketer. Explore my projects, skills, and certifications." />
+  <meta name="description" content="Portfolio of Tayyab Mehmood. Developer, Content Creator, and Digital Marketer." />
   <title>Tayyab Mehmood | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -14,8 +14,9 @@
 
 <body>
   <header>
-    <p>Developer | Content Creator | Digital Marketer</p>
-    <nav>
+    <p class="tagline">Developer | Content Creator | Digital Marketer</p>
+    <div class="hamburger" onclick="toggleSidebar()">☰</div>
+    <nav class="sidebar" id="sidebar">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -45,32 +46,34 @@
       <li>WordPress</li>
       <li>SEO & Social Media Marketing</li>
     </ul>
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
-      <div class="projects-container">
-        <div class="project">
-          <h3><a href="https://github.com/tayyabmehmod/Banking_system" target="_blank">ATM Simulator System</a></h3>
-          <img src="images/atm.png" alt="ATM Simulator Screenshot" class="project-image" />
-          <p>🏦 Welcome to SmartBank ATM Simulator... practical banking experience! 🚀💻</p>
-          <div class="project-tags">
-            <span class="tag">Java</span>
-            <span class="tag">OOP</span>
-            <span class="tag">SQL</span>
-          </div>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>ATM Simulator System</h3>
+        <img src="images/atm.png" alt="ATM Simulator Screenshot" class="project-image" />
+        <div class="project-tags">
+          <span class="tag">Java</span>
+          <span class="tag">OOP</span>
+          <span class="tag">SQL</span>
         </div>
-    
-        <div class="project">
-          <h3><a href="https://github.com/tayyabmehmod/Nature-wonder" target="_blank">Nature Wonder Website</a></h3>
-          <img src="images/nature.png" alt="Nature Wonder" class="project-image" />
-          <p>🌿 Welcome to Nature Wonder! 🌎✨ Discover the breathtaking beauty... one wonder at a time! 🌈🦩🌲</p>
-          <div class="project-tags">
-            <span class="tag">HTML/CSS/JavaScript</span>
-            <span class="tag">Web Design</span>
-          </div>
-        </div>
+        <a class="read-more-btn" href="https://github.com/tayyabmehmod/Banking_system" target="_blank">Read more</a>
       </div>
-    </section>
-    
+  
+      <div class="project">
+        <h3>Nature Wonder Website</h3>
+        <img src="images/nature.png" alt="Nature Wonder" class="project-image" />
+        <div class="project-tags">
+          <span class="tag">HTML/CSS/JS</span>
+          <span class="tag">Web Design</span>
+        </div>
+        <a class="read-more-btn" href="https://github.com/tayyabmehmod/Nature-wonder" target="_blank">Read more</a>
+      </div>
+    </div>
+  </section>
+  
 
   <section id="certifications" data-aos="fade-up">
     <h2>Certifications</h2>
@@ -100,6 +103,11 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
 </body>
 
 </html>
