@@ -354,7 +354,7 @@ h1:hover, h2:hover, h3:hover {
   display: inline-block;
   margin-top: 20px; /* Space between the text and the button */
   font-size: 1rem;
-  color: #007BFF; /* Blue color for the text */
+  color: #ffffff; /* Blue color for the text */
   text-decoration: none; /* Remove underline */
   transition: color 0.3s ease, transform 0.3s ease;
 }
