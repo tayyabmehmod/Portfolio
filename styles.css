@@ -133,8 +133,13 @@ section:hover {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  width: 80%;
+  width: 100%; /* Change width to 100% for better responsiveness */
   margin: 0 auto;
+}
+
+.project {
+  flex: 1 1 100%; /* Allow projects to take full width on mobile */
+  max-width: 400px; /* Optional: Set a max width for larger screens */
 }
 
 .project {
@@ -171,7 +176,7 @@ section:hover {
 
 .project img {
   width: 100%;
-  height: 250px;
+  height: auto; /* Change height to auto for responsive scaling */
   object-fit: cover;
   border-radius: 8px;
   margin: 20px auto 0;
