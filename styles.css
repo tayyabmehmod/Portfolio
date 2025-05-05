@@ -350,3 +350,16 @@ h1:hover, h2:hover, h3:hover {
   margin: 10px auto 0 auto;
   border-radius: 2px;
 }
+.read-more-btn {
+  display: inline-block;
+  margin-top: 20px; /* Space between the text and the button */
+  font-size: 1rem;
+  color: #007BFF; /* Blue color for the text */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more-btn:hover {
+  color: #222; /* Darker blue color on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
