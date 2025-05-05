@@ -422,3 +422,25 @@ h1:hover, h2:hover, h3:hover {
     display: block;
   }
 }
+/* HIDE sidebar on desktop */
+.sidebar {
+  display: none;
+}
+
+/* SHOW sidebar ONLY on small screens */
+@media (max-width: 768px) {
+  .sidebar {
+    display: flex;
+    right: -250px;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .topnav {
+    display: none;
+  }
+}
+
