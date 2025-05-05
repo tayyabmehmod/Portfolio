@@ -333,3 +333,20 @@ h1:hover, h2:hover, h3:hover {
     object-fit: cover; /* Ensures the image fits within the container */
   }
 }
+@media (max-width: 768px) {
+  .projects-container {
+    width: 100%; /* Full width on mobile */
+    padding: 10px; /* Padding adjustment */
+  }
+
+  .project {
+    width: 100%; /* Ensure each project takes full width on mobile */
+    margin-bottom: 20px; /* Adds spacing between items */
+  }
+
+  .project img {
+    width: 100%; /* Make image 100% of container width */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensure image fits container */
+  }
+}
