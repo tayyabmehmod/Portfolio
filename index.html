@@ -15,17 +15,29 @@
 <body>
   <header>
     <p class="tagline">Developer | Content Creator | Digital Marketer</p>
-    <div class="hamburger" onclick="toggleSidebar()">☰</div>
-    <nav class="sidebar" id="sidebar">
+    
+    <!-- Desktop Navigation -->
+    <nav class="topnav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#certifications">Certifications</a>
-      <a href="#resume">Curriculum Vitae</a>
+      <a href="#resume">CV</a>
       <a href="#contact">Contact</a>
     </nav>
+  
+    <!-- Mobile Hamburger and Sidebar -->
+    <div class="hamburger" onclick="toggleSidebar()">☰</div>
+    <nav class="sidebar" id="sidebar">
+      <a href="#about" onclick="toggleSidebar()">About</a>
+      <a href="#skills" onclick="toggleSidebar()">Skills</a>
+      <a href="#projects" onclick="toggleSidebar()">Projects</a>
+      <a href="#certifications" onclick="toggleSidebar()">Certifications</a>
+      <a href="#resume" onclick="toggleSidebar()">CV</a>
+      <a href="#contact" onclick="toggleSidebar()">Contact</a>
+    </nav>
   </header>
-
+  
   <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <h1>Tayyab Mehmood</h1>
