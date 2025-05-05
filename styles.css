@@ -176,12 +176,13 @@ section:hover {
 
 .project img {
   width: 100%;
-  height: auto; /* Change height to auto for responsive scaling */
+  height: 200px; /* Fixed height */
   object-fit: cover;
   border-radius: 8px;
   margin: 20px auto 0;
   display: block;
 }
+
 
 /* Certifications */
 .cert {
