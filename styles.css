@@ -745,3 +745,39 @@ html {
   color: #ffffff;
   font-size: 1.3rem;
 }
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 0.75rem;
+  background-color: #222;
+  border: 1px solid #555;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-container button {
+  background-color: #00cc99;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-container button:hover {
+  background-color: #009977;
+}
+
+.form-status {
+  margin-top: 1rem;
+  font-weight: bold;
+}
