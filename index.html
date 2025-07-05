@@ -1,123 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio of Tayyab Mehmood. Developer, Content Creator, and Social Media Marketer." />
-    <title>Tayyab Mehmood | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <header>
-      <p class="tagline">Turning Ideas into Code & Content | Developer & Creator</p>
-      <nav class="sidebar" id="sidebar">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#resume">Curriculum Vitae</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Tayyab Mehmood. Developer, Content Creator, and Social Media Marketer." />
+  <title>Tayyab Mehmood | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
 
-    <section id="about" data-aos="fade-up">
+  <header>
+    <p class="tagline"><span id="typed-text"></span></p>
+    <nav class="sidebar" id="sidebar">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#resume">Curriculum Vitae</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <button id="menu-toggle">☰</button>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#resume">Curriculum Vitae</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div id="overlay"></div>
+
+  </div>
+<section id="about" data-aos="fade-up">
+  <div class="about-wrapper">
+    <div class="about-text">
       <h2>About Me</h2>
       <h1>Tayyab Mehmood</h1>
-      <p>A passionate developer and content creator with a knack for technology and development...</p>
-      <p>Proficient in Java, Python, and C++... clean, modular code.</p>
-      <p>Skilled in front-end/back-end web dev </p>
-      <p>Also an experienced social media marketer and content writer...</p>
-      <p>I thrive in fast-paced environments where creativity meets technology.</p>
-    </section>
+      <p><span id="typed-about"></span></p>
+    </div>
+    <div class="about-image">
+      <img src="images/tb.png" alt="Tayyab Mehmood">
+    </div>
+  </div>
+</section>
 
-    <section id="skills" data-aos="fade-up">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Java</li>
-        <li>Python</li>
-        <li>C++</li>
-        <li>HTML/CSS/JS</li>
-      </ul>
-    </section>
 
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
-      <div class="projects-container">
-        <div class="project">
-          <h3>ATM Simulator System</h3>
-          <img src="images/atm.png" alt="ATM Simulator Screenshot" class="project-image" />
-          <div class="project-tags">
-            <span class="tag">Java</span>
-            <span class="tag">OOP</span>
-            <span class="tag">SQL</span>
-          </div>
-          <a class="read-more-btn" href="https://github.com/tayyabmehmod/Banking_system" target="_blank">Read more</a>
-        </div>
-
-        <div class="project">
-          <h3>Nature Wonder Website</h3>
-          <img src="images/nature.png" alt="Nature Wonder" class="project-image" />
-          <div class="project-tags">
-            <span class="tag">HTML/CSS/JS</span>
-            <span class="tag">Web Design</span>
-          </div>
-          <a class="read-more-btn" href="https://github.com/tayyabmehmod/Nature-wonder" target="_blank">Read more</a>
-        </div>
-        <div class="project">
-          <h3>Jarvis with GUI</h3>
-          <img src="images/jarvis.jpeg" alt="Jarvis Screenshot" class="project-image" />
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">AI</span>
-          </div>
-          <a class="read-more-btn" href="https://github.com/tayyabmehmod/Jarvis" target="_blank">Read more</a>
-        </div>
-        <div class="project">
-          <h3>Code World</h3>
-          <img src="images/code.png" alt="code Screenshot" class="project-image" />
-          <div class="project-tags">
-            <span class="tag">HTML/CSS/JS</span>
-            <span class="tag">Web Design</span>
-          </div>
-          <a class="read-more-btn" href="https://github.com/tayyabmehmod/code_world" target="_blank">Read more</a>
-        </div>
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skill-bars">
+      <div class="skill">
+        <p>Java</p>
+        <div class="skill-bar"><div class="fill" data-width="90%"></div></div>
       </div>
-    </section>
-
-    <section id="certifications" data-aos="fade-up">
-      <h2>Certifications</h2>
-      <div class="cert">
-        <p><a href="https://drive.google.com/file/d/1VRSUO3ZYXC1ph3SbHJnYFmtWUvNev3Gr/view?usp=drive_link" target="_blank">Java Programming Internship – A&D Tech Innovations</a></p>
-        <p>Python, HTML/CSS/JS – Learn At Home</p>
-        <p>Social Media Marketing – Learn At Home</p>
+      <div class="skill">
+        <p>Python</p>
+        <div class="skill-bar"><div class="fill" data-width="80%"></div></div>
       </div>
-    </section>
+      <div class="skill">
+        <p>C++</p>
+        <div class="skill-bar"><div class="fill" data-width="75%"></div></div>
+      </div>
+      <div class="skill">
+        <p>HTML/CSS/JS</p>
+        <div class="skill-bar"><div class="fill" data-width="90%"></div></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="resume" data-aos="fade-up">
-      <h2>Resume</h2>
-      <p><a href="https://drive.google.com/file/d/1kcG48mEWiEntBRckoQfoi_ETJpT4a77x/view?usp=sharing" download>Download My Resume (PDF)</a></p>
-    </section>
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>ATM Simulator System</h3>
+        <img src="images/atm.png" alt="ATM Simulator Screenshot" class="project-image" />
+        <div class="project-tags">
+          <span class="tag">Java</span>
+          <span class="tag">OOP</span>
+          <span class="tag">SQL</span>
+        </div>
+        <a class="read-more-btn" href="https://github.com/tayyabmehmod/Banking_system" target="_blank">Read more</a>
+      </div>
 
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p>Email: tayyabmehmood7b@gmail.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/tayyab-mehmood-2b134a284" target="_blank">tayyab-mehmood</a></p>
-      <p>GitHub: <a href="https://github.com/tayyabmehmod" target="_blank">tayyabmehmod</a></p>
-    </section>
+      <div class="project">
+        <h3>Nature Wonder Website</h3>
+        <img src="images/nature.png" alt="Nature Wonder" class="project-image" />
+        <div class="project-tags">
+          <span class="tag">HTML/CSS/JS</span>
+          <span class="tag">Web Design</span>
+        </div>
+        <a class="read-more-btn" href="https://github.com/tayyabmehmod/Nature-wonder" target="_blank">Read more</a>
+      </div>
 
-    <footer>
-      <p>&copy; 2025 Tayyab Mehmood. All rights reserved.</p>
-    </footer>
+      <div class="project">
+        <h3>Jarvis with GUI</h3>
+        <img src="images/jarvis.jpeg" alt="Jarvis Screenshot" class="project-image" />
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">AI</span>
+        </div>
+        <a class="read-more-btn" href="https://github.com/tayyabmehmod/Jarvis" target="_blank">Read more</a>
+      </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
-    <script>
-      function toggleSidebar() {
-        document.getElementById("sidebar").classList.toggle("active");
+      <div class="project">
+        <h3>Code World</h3>
+        <img src="images/code.png" alt="Code Screenshot" class="project-image" />
+        <div class="project-tags">
+          <span class="tag">HTML/CSS/JS</span>
+          <span class="tag">Web Design</span>
+        </div>
+        <a class="read-more-btn" href="https://github.com/tayyabmehmod/code_world" target="_blank">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="technologies" data-aos="fade-up">
+    <h2>Technologies I Use</h2>
+    <div class="tech-logos">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL">
+    </div>
+  </section>
+
+  <section id="certifications" data-aos="fade-up">
+  <h2>Certifications</h2>
+  <div class="certifications-container">
+    <div class="cert-card">
+      <i class="fas fa-code"></i>
+      <p><a href="https://drive.google.com/file/d/1VRSUO3ZYXC1ph3SbHJnYFmtWUvNev3Gr/view?usp=drive_link" target="_blank">Java Programming Internship</a></p>
+      <span>A&D Tech Innovations</span>
+    </div>
+    <div class="cert-card">
+      <i class="fas fa-laptop-code"></i>
+      <p>Python, HTML/CSS/JS</p>
+      <span>Learn At Home</span>
+    </div>
+    <div class="cert-card">
+      <i class="fas fa-bullhorn"></i>
+      <p>Social Media Marketing</p>
+      <span>Learn At Home</span>
+    </div>
+  </div>
+</section>
+
+
+  <section id="resume" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p><a href="https://drive.google.com/file/d/1kcG48mEWiEntBRckoQfoi_ETJpT4a77x/view?usp=sharing" download>Download My Resume (PDF)</a></p>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/mqkwjzdo" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Tayyab Mehmood</p>
+    <div class="socials">
+      <a href="https://github.com/tayyabmehmod" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/tayyab-mehmood-2b134a284" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://instagram.com/mehmood._.0" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <script>
+    const toggleBtn = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    toggleBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Hide mobile menu on link click
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+
+    // Typed text effect
+    var typed = new Typed('#typed-text', {
+      strings: ['Turning Ideas into Code', 'Full-Stack Developer', 'Content Creator', 'Tech Enthusiast'],
+      typeSpeed: 60,
+      backSpeed: 30,
+      loop: true
+    });
+
+    // Animate skill bars
+    const skillFills = document.querySelectorAll('.fill');
+    const animateSkills = () => {
+      skillFills.forEach(fill => {
+        const target = fill.getAttribute('data-width');
+        fill.style.width = target;
+      });
+    };
+    let skillsAnimated = false;
+    window.addEventListener('scroll', () => {
+      const skillsSection = document.querySelector('#skills');
+      const sectionTop = skillsSection.getBoundingClientRect().top;
+      if (!skillsAnimated && sectionTop < window.innerHeight - 100) {
+        animateSkills();
+        skillsAnimated = true;
       }
-    </script>
-  </body>
+    });
+  </script>
+  
+  <script>
+  new Typed('#typed-about', {
+    strings: [
+      " A passionate developer and content creator with a knack for technology and development. Proficient in Java, Python, and C++... clean, modular code. Skilled in front-end/back-end web dev. Also an experienced social media marketer and content writer. I thrive in fast-paced environments where creativity meets technology."
+    ],
+    typeSpeed: 40,
+    startDelay: 500,
+    backSpeed: 0,          // Not needed since it won't delete
+    backDelay: 4000,       // How long to pause at the end
+    loop: false,
+    showCursor: true
+  });
+</script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</body>
 </html>
