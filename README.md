@@ -39,9 +39,7 @@ portfolio-website/
 
 ---
 
-## 📸 Preview
 
-![Portfolio Preview](images/preview.jpg) *(Add your preview screenshot here)*
 
 ---
 
