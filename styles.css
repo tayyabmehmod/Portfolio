@@ -890,7 +890,7 @@ html {
 }
 
 .mode-toggle:hover {
-  background: #555;
+  background: #00ffc8;
 }
 
 /* Light Mode styles */
@@ -1002,4 +1002,16 @@ body.light-mode .skills-list li i {
 
 @keyframes blink {
   50% { opacity: 0; }
+}
+/* Prevent body scroll */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Optional overlay if you want background dimming */
+#overlay.active {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 50;
 }
