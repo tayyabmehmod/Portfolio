@@ -13,8 +13,8 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+<link rel="icon" href="images\tm.png" type="image">
 </head>
 
 <body>
@@ -51,40 +51,38 @@
     <div id="overlay"></div>
 
   </div>
-  <section id="about" data-aos="fade-up">
-    <div class="about-wrapper">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <h2>
-          <span class="code-intro">cout<<"</span>
-              <span class="code-hello">"Hello, this is"</span>
-              <span class="code-intro">;</span>
-        </h2>
-        <h1 class="glow-name">Tayyab Mehmood</h1>
-        <p>
-  I’m a Full-Stack Developer passionate about creating responsive, user-friendly web applications. I work with HTML, CSS, JavaScript, PHP, and MySQL to turn ideas into functional solutions. <br><br>
+ <section id="about" data-aos="fade-up">
+  <div class="about-wrapper">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <h2>
+        <span class="code-intro">cout<<"</span>
+        <span class="code-hello">"Hello, this is"</span>
+        <span class="code-intro">;</span>
+      </h2>
+      <h1 class="glow-name">Tayyab Mehmood</h1>
+      <p>
+        I’m a Full-Stack Developer passionate about creating responsive, user-friendly web applications. I work with HTML, CSS, JavaScript, PHP, and MySQL to turn ideas into functional solutions. <br><br>
+        I also have experience with Java, Python, and C++, allowing me to build efficient and robust software systems. <br><br>
+        I'm driven by clean UI design, great user experiences, and continuous learning. I'm currently exploring Android development to expand into mobile app creation.
+      </p>
 
-  I also have experience with Java, Python, and C++, allowing me to build efficient and robust software systems. <br><br>
+      <a href="https://drive.google.com/file/d/1vNxBrQ2Kj2nCWNd4aFxn1T3JdWih6OKL/view?usp=sharing" 
+         target="_blank" 
+         class="resume-link">
+        📥 Resume
+      </a>
+      
 
-  I'm driven by clean UI design, great user experiences, and continuous learning. I'm currently exploring Android development to expand into mobile app creation.
-</p>
-
-<a href="https://drive.google.com/file/d/1vNxBrQ2Kj2nCWNd4aFxn1T3JdWih6OKL/view?usp=sharing" 
-   target="_blank" 
-   class="resume-link">
-  📥 Resume
-</a>
-
-
-
-      </div>
-      <div class="about-image">
-        <img src="images/tyb.png" alt="Tayyab Mehmood">
-      </div>
+      
     </div>
-    
 
-  </section>
+    <div class="about-image">
+      <img src="images/tyb.png" alt="Tayyab Mehmood">
+    </div>
+  </div>
+</section>
+
   <section id="skills" data-aos="fade-up">
     <h2>Languages</h2>
     <div class="skill-bars">
@@ -132,12 +130,21 @@
   </section>
 
 
+
   <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
+      <div class="project-filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="web">Web</button>
+  <button class="filter-btn" data-filter="android">Android</button>
+  <button class="filter-btn" data-filter="desktop">Desktop</button>
+</div>
     <div class="projects-container">
 
+    
+
       <!-- ATM Simulator -->
-      <div class="project">
+      <div class="project" data-category="desktop">
         <img src="images/atm.png" loading="lazy" alt="ATM Simulator Screenshot" class="project-image" />
         <h3>ATM Simulator System</h3>
         <p>A GUI-based banking simulator that mimics real-world ATM operations. Built with Java and MySQL, it includes
@@ -171,7 +178,7 @@
       </div> -->
 
       <!-- Jarvis -->
-      <div class="project">
+      <div class="project" data-category="desktop">
         <img src="images/jarvis.jpeg" loading="lazy"  alt="Jarvis Screenshot" class="project-image" />
         <h3>Jarvis with GUI</h3>
         <p>A desktop voice assistant created using Python and Tkinter. It automates everyday tasks like opening apps,
@@ -187,7 +194,7 @@
       </div>
 
       <!-- Code World -->
-      <div class="project">
+      <div class="project" data-category="web">
         <img src="images/code.png" loading="lazy" alt="Code World Screenshot" class="project-image" />
         <h3>Code World</h3>
         <p>An educational code-sharing prototype that promotes collaborative learning. Built with HTML, CSS, and JS, it
@@ -206,7 +213,7 @@
 
         
       <!-- Travel Form -->
-      <div class="project">
+      <div class="project" data-category="web">
         <img src="images/tform.png" loading="lazy" alt="Travel Form" class="project-image" />
         <h3>Travel Form</h3>
         <p>A full-stack travel application that collects and stores user info in a MySQL database. Includes form
@@ -226,7 +233,7 @@
       </div>
 
       <!-- Resume Builder -->
-      <div class="project">
+      <div class="project" data-category="web">
         <img src="images/resume.png" loading="lazy" alt="Resume Builder Screenshot" class="project-image" />
         <h3>Resume Builder</h3>
         <p>A secure web application where users can register, verify via OTP, input resume data, and download a PDF
@@ -246,7 +253,7 @@
       </div>
 
       <!-- Typing Speed Game -->
-<div class="project">
+<div class="project" data-category="web">
   <img src="images/typing.png" loading="lazy" alt="Typing Speed Game Screenshot" class="project-image" />
   <h3>Typing Speed Game</h3>
   <p>A fun and interactive typing game that challenges users to type randomly generated words quickly and accurately. Built using HTML, CSS, and JavaScript with live score tracking and difficulty levels.</p>
@@ -262,7 +269,7 @@
 </div>
 
 <!-- Expense Tracker -->
-<div class="project">
+<div class="project" data-category="web">
   <img src="images/expense_tracker.png" loading="lazy"  alt="Expense Tracker Screenshot" class="project-image" />
   <h3>Expense & Budget Tracker</h3>
   <p>A full-featured web app that allows users to log, categorize, and visualize expenses. Includes user registration, filters, charts, and monthly balance insights using PHP, JS, Chart.js, and MySQL.</p>
@@ -342,6 +349,8 @@
   <section id="contact">
     <div class="contact-container">
       <h2 class="code-style">getInTouch()<span class="cursor">;</span></h2>
+      <p class="contact-tagline">Have an idea or a bug to squash? I’m all ears!</p>
+
       <form id="contact-form" action="https://formspree.io/f/mwpbjlrl" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="_replyto" placeholder="Your Email" required>
@@ -484,6 +493,29 @@
     });
   });
 </script>
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.project');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelector('.filter-btn.active')?.classList.remove('active');
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      projects.forEach(project => {
+        const category = project.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          project.style.display = 'block';
+        } else {
+          project.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
