@@ -1042,3 +1042,34 @@ body.light-mode .skills-list li i {
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(0, 255, 195, 0.2);
 }
+.project-filters {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  background: #333;
+  color: #fff;
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #93b6aa;
+}
+.contact-tagline {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  color: #00ffd5;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+
