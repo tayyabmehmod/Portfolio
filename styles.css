@@ -1073,3 +1073,16 @@ body.light-mode .skills-list li i {
 }
 
 
+.tagline {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #181818; /* Match your site theme */
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  color: #00ffd5;
+  animation: glow 2s ease-in-out infinite alternate;
+}
